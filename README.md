@@ -36,7 +36,8 @@ O banco é composto por 8 tabelas:
 - Controle de versão: Git e GitHub
 
 ## Estrutura de diretórios
-- `conf/` — script SQL do banco de dados (`script.sql`)
+- `conf/mysql/` — script SQL do banco de dados (`script.sql`)
+- `conf/tomcat/` — configuração do Tomcat (`app.xml`)
 
 ## Como executar
 1. Clonar o repositório:
@@ -45,5 +46,5 @@ O banco é composto por 8 tabelas:
 ```
 2. Executar o script no MySQL:
 ```bash
-   mysql -u root -p < conf/script.sql
+   mysql -u root -p < conf/mysql/script.sql
 ```
